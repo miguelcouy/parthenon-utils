@@ -40,7 +40,7 @@ class Encrypter:
     """
 
     def __init__(self, 
-                 key: Union[str, bytes, Fernet] = None,
+                 key: Union[str, bytes, Fernet],
                  ) -> None:
         
         self.key = key
