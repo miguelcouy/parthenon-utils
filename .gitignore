@@ -4,6 +4,7 @@
 db/*
 /db/*
 */db/*
+*/db/*
 .directory
 *.pyc
 */__pycache__/*
