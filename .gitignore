@@ -32,3 +32,4 @@ bin/*
 *.err
 auth.txt
 */auth.txt
+source/.pypirc
