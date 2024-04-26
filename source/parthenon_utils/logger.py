@@ -119,7 +119,6 @@ class Logger:
             fmt=' | '.join([
                 '%(asctime)s',
                 '%(levelname)-8s',
-                '%(name)s',
                 '%(module)s',
                 '%(funcName)s',
                 'Thread: %(thread)d',

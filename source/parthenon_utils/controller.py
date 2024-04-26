@@ -24,7 +24,8 @@ class Controller:
     
     Attributes:
         - code_filename : Union[Path, str, None]
-            The filename associated with operational context, can be used in logging.
+            The filename associated with operational context, can be used in 
+            logging.
         - code_directory : Union[Path, str, None]
             The base directory for operations and storing files.
         - code_runtime : Union[dt.datetime, str, None]
@@ -32,7 +33,8 @@ class Controller:
         - code_fernet_key : Union[Fernet, str, bytes, None]
             The encryption key used for Encrypter initialization.
         - ctrl_create_base_paths : bool
-            Flag to determine if base paths should be automatically created on initialization.
+            Flag to determine if base paths should be automatically created on 
+            initialization.
         - builder : Builder
             The Builder object used for file and directory operations.
         - log : Logger.log
@@ -78,10 +80,6 @@ class Controller:
         self.builder.ctrl_log = self.log
         self.encrypter.ctrl_log = self.log
 
-        
-
-        
-
     def init_builder(self):
         """
         Initializes the Builder object used within the Controller.
@@ -99,9 +97,9 @@ class Controller:
         )
 
         if self.ctrl_create_base_paths:
-            self.tmp_path = builder.ensure_directory(this_path = '.tmp')
-            self.log_path = builder.ensure_directory(this_path = '.log')
-            self.db_path = builder.ensure_directory(this_path = '.db')
+            self.tmp_path: Path = builder.ensure_directory(this_path = '.tmp')
+            self.log_path: Path = builder.ensure_directory(this_path = '.log')
+            self.db_path: Path = builder.ensure_directory(this_path = '.db')
 
         return builder
 
