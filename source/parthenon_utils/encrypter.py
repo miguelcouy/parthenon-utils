@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 __author__ = 'Miguel Freire Couy'
 __credits__ = ['Miguel Freire Couy']
-__version__ = '0.0.1'
 __maintainer__ = 'Miguel Freire Couy'
 __email__ = 'miguel.couy@Ooutlook.com'
 __status__ = 'Production'
@@ -60,10 +61,9 @@ class Encrypter:
         elif isinstance(self.key, Fernet):
             self.key = self.key
 
-        else:
-           raise TypeError(
-               "The key must be a string, bytes, or a Fernet object."
-            )
+        elif isinstance(self.key, None):
+            pass
+        
 
     @staticmethod
     def generate_key(as_bytes: bool = False) -> Union[str, bytes]:
