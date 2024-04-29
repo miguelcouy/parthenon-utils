@@ -2,7 +2,6 @@
 
 __author__ = 'Miguel Freire Couy'
 __credits__ = ['Miguel Freire Couy']
-__version__ = '1.0.0'
 __maintainer__ = 'Miguel Freire Couy'
 __email__ = 'miguel.couy@Ooutlook.com'
 __status__ = 'Production'
