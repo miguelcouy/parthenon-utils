@@ -61,8 +61,7 @@ class Encrypter:
         elif isinstance(self.key, Fernet):
             self.key = self.key
 
-        elif isinstance(self.key, None):
-            pass
+        else: pass
         
 
     @staticmethod
