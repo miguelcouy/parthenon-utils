@@ -31,3 +31,6 @@ bin/*
 *.err
 auth.txt
 */auth.txt
+/source
+/dist
+/parthenon_utils.egg-info
